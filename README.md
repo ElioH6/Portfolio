@@ -1,5 +1,5 @@
-# CV
-https://elioh6.github.io/CV/
+# Live
+https://elioh6.github.io/Portfolio
 CV devoir IRIS
 
 Personal portfolio of Elio Hamouche, full-stack web developer (BTS SIO, École IRIS).
