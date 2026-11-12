@@ -3,402 +3,336 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
+        <title>Elio Hamouche · Full-stack Web Developer</title>
+        <meta name="description" content="Portfolio of Elio Hamouche, full-stack web developer and BTS SIO student at École IRIS, Paris. React, Node.js, PHP, C#, Java, MySQL, MongoDB, Docker.">
+        <meta name="author" content="Elio Hamouche">
+        <meta property="og:title" content="Elio Hamouche · Full-stack Web Developer">
+        <meta property="og:description" content="Full-stack web developer and BTS SIO student at École IRIS, Paris.">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://elioh6.github.io/CV/">
+        <meta name="theme-color" content="#0b1120">
+        <link rel="icon" type="image/png" href="img/letter-e.png">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
         <link rel="stylesheet" href="css/bootstrap.min.css">
-        <title>CV</title>
+        <link rel="stylesheet" href="style.css">
+        <script>document.documentElement.classList.add('js');</script>
     </head>
 
-    <body id="home">
-        <nav
-            class="navbar navbar-dark bg-dark navbar-expand-lg p-4 sticky-top bg-opacity-75"
-            data-bs-theme="dark">
-            <div class="container-fluid">
-                <a class="navbar-brand d-flex align-items-center gap-1" href="#">
-                    <img class="custom-width" src="img/letter-e.png" alt="">
-                    <h1 class="fw-semibold text-custom1 p-0 m-0">lio</h1>
+    <body id="home" data-bs-theme="dark">
+
+        <!-- ========== Navbar ========== -->
+        <nav class="navbar navbar-expand-lg fixed-top site-nav" aria-label="Main navigation">
+            <div class="container">
+                <a class="navbar-brand brand" href="#home">
+                    <img src="img/letter-e.png" alt="" width="34" height="34">
+                    <span>Elio Hamouche</span>
                 </a>
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#mainNav" aria-controls="mainNav"
+                        aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 gap-3 pt-lg-0 pt-4 gap-lg-5">
-                        <li class="nav-item">
-                            <a class="custom-link" aria-current="page" href="#home">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="custom-link" aria-current="page" href="#skills">Skills</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="custom-link" aria-current="page" href="#cv">CV</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="custom-link" aria-current="page" href="#contact">Contact</a>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-4">
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        <li class="nav-item mt-2 mt-lg-0">
+                            <a class="btn btn-accent btn-sm px-3" href="CV_Elio_Hamouche_2026.pdf" target="_blank" rel="noopener">Download CV</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
 
-        <!-- main -->
+        <main>
 
-        <div class="d-flex flex-column align-items-center py-5 min-vh-100">
-            <p class="intro text-info">Hi, my name is</p>
-            <h1 class="fw-semibold p-0 m-0 text-white">Elio Hamouche</h1>
-            <p class="fw-semibold text-white mt-4 fs-3">Fullstack Developer</p>
-            <img
-                class="mt-5 img-fluid border border-2 border-primary rounded rounded-5 custom-img"
-                src="img/myPhoto1.png"
-                alt="">
-        </div>
-
-        <!-- skills -->
-
-        <div class="bg-dark mb-5" id="skills">
-            <h1 class="fw-semibold text-white text-center fs-1" id="skill-title">My Skills</h1>
-
-            <div class="container py-5">
-                <div class="row g-4 justify-content-center">
-
-                    <div class="col-lg-5 reveal">
-                        <div
-                            class="card text-center d-flex flex-column pb-2 pt-5 border-2 border-info"
-                            id="card">
-                            <p class="mb-5 fs-4">HTML, CSS, JavaScript</p>
-                            <div class="row g-4 justify-content-center">
-                                <img class="w-25" src="img/logos/html.png" alt="HTML logo"/>
-                                <img class="w-25" src="img/logos/css.png" alt="HTML logo"/>
+            <!-- ========== Hero ========== -->
+            <header class="hero">
+                <div class="container">
+                    <div class="row align-items-center g-4 g-lg-5">
+                        <div class="col-lg-7 order-2 order-lg-1">
+                            <p class="eyebrow"><span class="typing">Hi, my name is</span></p>
+                            <h1 class="hero-name">Elio Hamouche</h1>
+                            <p class="hero-role">Full-stack Web Developer</p>
+                            <p class="hero-lead">
+                                BTS SIO student at École IRIS in Paris. I build responsive
+                                interfaces and the APIs behind them with React, Node.js and PHP,
+                                and I also work in C# and Java.
+                            </p>
+                            <div class="d-flex flex-wrap gap-3 mt-4">
+                                <a class="btn btn-accent btn-lg" href="#projects">View my projects</a>
+                                <a class="btn btn-ghost btn-lg" href="#contact">Get in touch</a>
                             </div>
-                            <div>
-                                <img class="w-25" src="img/logos/js.png" alt="HTML logo"/>
-
+                            <ul class="hero-meta">
+                                <li><span class="dot"></span>Open to remote work</li>
+                                <li><span class="dot"></span>Île-de-France</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-5 order-1 order-lg-2 text-center">
+                            <div class="photo-frame">
+                                <img src="img/myPhoto1.png" alt="Portrait of Elio Hamouche" width="433" height="348">
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-lg-5 reveal">
-                        <div
-                            class="card text-center d-flex flex-column pb-2 pt-5 border-2 border-info"
-                            id="card">
-                            <p class="mb-5 fs-4">React, Tailwind, Bootstrap</p>
-                            <div class="row g-4 justify-content-center">
-                                <img class="w-custom3 w-25" src="img/logos/react.png" alt="HTML logo"/>
-                                <img class="w-custom3 w-25" src="img/logos/tailwind.png" alt="HTML logo"/>
-                            </div>
-                            <div>
-                                <img class="w-custom3 w-25" src="img/logos/bootstrap.png" alt="HTML logo"/>
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-5 reveal">
-                        <div
-                            class="card text-center d-flex flex-column pb-2 pt-5 border-2 border-info"
-                            id="card">
-                            <p class="mb-5 fs-4">Node, Express</p>
-
-                            <div class="row g-4 justify-content-center mt-3">
-                                <img class="w-25" src="img/logos/node.png" alt="HTML logo"/>
-                                <img class="w-25" src="img/logos/express.png" alt="HTML logo"/>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-5 reveal">
-                        <div
-                            class="card text-center d-flex flex-column pb-2 pt-5 border-2 border-info"
-                            id="card">
-                            <p class="mb-5 fs-4">MongoDB, Prisma</p>
-
-                            <div class="row g-4 justify-content-center mt-3">
-                                <img class="w-25" src="img/logos/mongodb.png" alt="HTML logo"/>
-                                <img class="w-25" src="img/logos/prisma.png" alt="HTML logo"/>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
+                <a class="scroll-hint" href="#about" aria-label="Scroll to About"><span></span></a>
+            </header>
+
+            <!-- ========== About ========== -->
+            <section id="about" class="section">
+                <div class="container">
+                    <div class="section-head reveal">
+                        <p class="section-kicker">01 · About</p>
+                        <h2 class="section-title">About me</h2>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-lg-7 reveal">
+                            <div class="panel h-100">
+                                <p class="mb-3">
+                                    I'm a full-stack web developer currently studying for a BTS SIO
+                                    (Services Informatiques aux Organisations) at École IRIS in Paris.
+                                    I enjoy taking a feature from the interface all the way down to the
+                                    database, and I keep learning by building small projects.
+                                </p>
+                                <p class="mb-0">
+                                    In summer 2025 I completed a web developer internship at Greydeck
+                                    in Beirut, where I worked on responsive pages, APIs and UI components.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 reveal">
+                            <div class="panel h-100">
+                                <dl class="facts">
+                                    <div><dt>Role</dt><dd>Full-stack Web Developer</dd></div>
+                                    <div><dt>Studying</dt><dd>BTS SIO · École IRIS, Paris</dd></div>
+                                    <div><dt>Location</dt><dd>Île-de-France · open to remote</dd></div>
+                                    <div><dt>Languages</dt><dd>French, English, Arabic, Russian</dd></div>
+                                    <div><dt>Interests</dt><dd>New tech, interface design, creative coding, fitness</dd></div>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========== Skills ========== -->
+            <section id="skills" class="section section-alt">
+                <div class="container">
+                    <div class="section-head reveal">
+                        <p class="section-kicker">02 · Skills</p>
+                        <h2 class="section-title">Tech stack</h2>
+                        <p class="section-sub">The languages, frameworks and tools I work with.</p>
+                    </div>
+
+                    <div class="row g-4">
+                        <!-- Languages -->
+                        <div class="col-md-6 col-xl-4 reveal">
+                            <article class="skill-card">
+                                <h3><span class="skill-ico">{ }</span>Languages</h3>
+                                <ul class="skill-list">
+                                    <li><span class="tile"><img src="img/logos/js.png" alt=""></span>JavaScript</li>
+                                    <li><span class="tile mono" style="--c:#6a6fb0">php</span>PHP</li>
+                                    <li><span class="tile mono" style="--c:#7b3fbf">C#</span>C#</li>
+                                    <li><span class="tile mono" style="--c:#d86400">Jv</span>Java</li>
+                                </ul>
+                            </article>
+                        </div>
+
+                        <!-- Frontend -->
+                        <div class="col-md-6 col-xl-4 reveal">
+                            <article class="skill-card">
+                                <h3><span class="skill-ico">&lt;/&gt;</span>Frontend</h3>
+                                <ul class="skill-list">
+                                    <li><span class="tile"><img src="img/logos/html.png" alt=""></span>HTML</li>
+                                    <li><span class="tile"><img src="img/logos/css.png" alt=""></span>CSS</li>
+                                    <li><span class="tile"><img src="img/logos/react.png" alt=""></span>React</li>
+                                    <li><span class="tile"><img src="img/logos/tailwind.png" alt=""></span>Tailwind CSS</li>
+                                    <li><span class="tile"><img src="img/logos/bootstrap.png" alt=""></span>Bootstrap</li>
+                                </ul>
+                            </article>
+                        </div>
+
+                        <!-- Backend -->
+                        <div class="col-md-6 col-xl-4 reveal">
+                            <article class="skill-card">
+                                <h3><span class="skill-ico">⚙</span>Backend</h3>
+                                <ul class="skill-list">
+                                    <li><span class="tile mono" style="--c:#3c873a">N</span>Node.js</li>
+                                    <li><span class="tile mono" style="--c:#3a3f4b">ex</span>Express</li>
+                                    <li><span class="tile mono" style="--c:#6a6fb0">php</span>PHP</li>
+                                    <li><span class="tile mono" style="--c:#2b8a6e">API</span>REST APIs</li>
+                                </ul>
+                            </article>
+                        </div>
+
+                        <!-- Databases -->
+                        <div class="col-md-6 col-xl-4 reveal">
+                            <article class="skill-card">
+                                <h3><span class="skill-ico">◫</span>Databases</h3>
+                                <ul class="skill-list">
+                                    <li><span class="tile mono" style="--c:#00758f">SQL</span>MySQL</li>
+                                    <li><span class="tile"><img src="img/logos/mongodb.png" alt=""></span>MongoDB</li>
+                                    <li><span class="tile mono" style="--c:#2d3748">Pr</span>Prisma</li>
+                                </ul>
+                            </article>
+                        </div>
+
+                        <!-- Tools & DevOps -->
+                        <div class="col-md-6 col-xl-4 reveal">
+                            <article class="skill-card">
+                                <h3><span class="skill-ico">⌘</span>Tools &amp; DevOps</h3>
+                                <ul class="skill-list">
+                                    <li><span class="tile mono" style="--c:#e44c30">git</span>Git / GitHub</li>
+                                    <li><span class="tile mono" style="--c:#1d91e6">Dk</span>Docker</li>
+                                    <li><span class="tile mono" style="--c:#d6336c">W</span>WAMP</li>
+                                </ul>
+                            </article>
+                        </div>
+
+                        <!-- Always learning -->
+                        <div class="col-md-6 col-xl-4 reveal">
+                            <article class="skill-card skill-card-cta">
+                                <h3>Always learning</h3>
+                                <p>
+                                    I follow new web technologies closely and practise them by
+                                    building mini-projects. Have a look at my code on GitHub.
+                                </p>
+                                <a class="link-arrow" href="https://github.com/ElioH6" target="_blank" rel="noopener">github.com/ElioH6 →</a>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========== Experience & Education ========== -->
+            <section id="experience" class="section">
+                <div class="container">
+                    <div class="section-head reveal">
+                        <p class="section-kicker">03 · Background</p>
+                        <h2 class="section-title">Experience &amp; education</h2>
+                    </div>
+
+                    <div class="row g-4 g-lg-5">
+                        <div class="col-lg-6">
+                            <h3 class="col-title reveal">Experience</h3>
+                            <ol class="timeline">
+                                <li class="reveal">
+                                    <p class="t-date">July 2025 – September 2025</p>
+                                    <h4 class="t-title">Web Developer Intern</h4>
+                                    <p class="t-org">Greydeck SAL · Beirut, Lebanon</p>
+                                    <p class="t-text">
+                                        Internship at a web development, multimedia and branding company.
+                                        Worked on responsive pages and APIs and improved UI components
+                                        as part of the development team.
+                                    </p>
+                                    <a class="link-arrow" href="Elio Hamouche internship greydeck.pdf" target="_blank" rel="noopener">Internship certificate (PDF) →</a>
+                                </li>
+                            </ol>
+                        </div>
+                        <div class="col-lg-6">
+                            <h3 class="col-title reveal">Education</h3>
+                            <ol class="timeline">
+                                <li class="reveal">
+                                    <p class="t-date">Since February 2026</p>
+                                    <h4 class="t-title">BTS SIO</h4>
+                                    <p class="t-org">
+                                        <a href="https://ecoleiris.fr" target="_blank" rel="noopener">École IRIS</a> · Paris, France
+                                    </p>
+                                    <p class="t-text">
+                                        Services Informatiques aux Organisations. Main subjects:
+                                        programming, databases, web development and software engineering.
+                                    </p>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========== Projects ========== -->
+            <section id="projects" class="section section-alt">
+                <div class="container">
+                    <div class="section-head reveal">
+                        <p class="section-kicker">04 · Work</p>
+                        <h2 class="section-title">Projects</h2>
+                        <p class="section-sub">A selection of what I've built. More on my GitHub.</p>
+                    </div>
+
+                    <div class="row g-4">
+                        <div class="col-md-6 reveal">
+                            <article class="project-card">
+                                <div class="project-top">
+                                    <span class="project-badge">Full-stack</span>
+                                    <a class="icon-link-out" href="https://github.com/ElioH6/chat-app" target="_blank" rel="noopener" aria-label="Chat App repository on GitHub">↗</a>
+                                </div>
+                                <h3>Chat App</h3>
+                                <p>A full-stack chat application with a React front end, a Node.js back end and a MongoDB database.</p>
+                                <ul class="stack">
+                                    <li>React</li><li>Node.js</li><li>MongoDB</li>
+                                </ul>
+                                <a class="link-arrow" href="https://github.com/ElioH6/chat-app" target="_blank" rel="noopener">View repository →</a>
+                            </article>
+                        </div>
+
+                        <div class="col-md-6 reveal">
+                            <article class="project-card">
+                                <div class="project-top">
+                                    <span class="project-badge">Website</span>
+                                    <a class="icon-link-out" href="https://github.com/ElioH6/CV" target="_blank" rel="noopener" aria-label="Portfolio repository on GitHub">↗</a>
+                                </div>
+                                <h3>This portfolio</h3>
+                                <p>My personal CV website: responsive and hosted on GitHub Pages.</p>
+                                <ul class="stack">
+                                    <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Bootstrap</li>
+                                </ul>
+                                <a class="link-arrow" href="https://github.com/ElioH6/CV" target="_blank" rel="noopener">View repository →</a>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="text-center mt-5 reveal">
+                        <a class="btn btn-ghost btn-lg" href="https://github.com/ElioH6" target="_blank" rel="noopener">See all projects on GitHub</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========== Contact ========== -->
+            <section id="contact" class="section">
+                <div class="container">
+                    <div class="contact-box reveal">
+                        <p class="section-kicker">05 · Contact</p>
+                        <h2 class="section-title">Let's work together</h2>
+                        <p class="section-sub mx-auto">
+                            I'm open to internships, projects and remote work.
+                            The quickest way to reach me is by email.
+                        </p>
+                        <a class="btn btn-accent btn-lg mt-2 email-btn" href="mailto:eliohamouche6@gmail.com">eliohamouche6@gmail.com</a>
+                        <ul class="contact-links">
+                            <li><a href="https://github.com/ElioH6" target="_blank" rel="noopener">GitHub</a></li>
+                            <!-- TODO: replace with your personal LinkedIn profile URL -->
+                            <li><a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a></li>
+                            <li><a href="CV_Elio_Hamouche_2026.pdf" target="_blank" rel="noopener">CV (PDF)</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+                <p class="mb-0">© <span id="year">2026</span> Elio Hamouche</p>
+                <a href="#home" class="back-top">Back to top ↑</a>
             </div>
-
-            <!-- progress-bar -->
-
-            <div
-                class="container w-75 border border-info border-2 px-5 rounded-5 bg-gray mt-5"
-                style="box-shadow: 0 0 30px #48b0ff59;">
-                <p class="text-white text-center mt-3">HTML</p>
-                <div
-                    class="progress mb-5 reveal"
-                    style="height: 30px;"
-                    role="progressbar"
-                    aria-label="Success example"
-                    aria-valuenow="25"
-                    aria-valuemin="0"
-                    aria-valuemax="100">
-                    <div
-                        class="progress-bar progress-bar-striped progress-bar-animated"
-                        style="width: 95%; background-color: orangered">95%</div>
-                </div>
-                <p class="text-white text-center mt-3">CSS</p>
-
-                <div
-                    class="progress mb-5 reveal"
-                    style="height: 30px;"
-                    role="progressbar"
-                    aria-label="Info example"
-                    aria-valuenow="50"
-                    aria-valuemin="0"
-                    aria-valuemax="100">
-                    <div
-                        class="progress-bar text-bg-info progress-bar-striped progress-bar-animated"
-                        style="width: 78%">78%</div>
-                </div>
-                <p class="text-white text-center mt-3">JS</p>
-
-                <div
-                    class="progress mb-5 reveal"
-                    style="height: 30px;"
-                    role="progressbar"
-                    aria-label="Warning example"
-                    aria-valuenow="75"
-                    aria-valuemin="0"
-                    aria-valuemax="100">
-                    <div
-                        class="progress-bar text-bg-warning progress-bar-striped progress-bar-animated"
-                        style="width: 90%">90%</div>
-                </div>
-                <p class="text-white text-center mt-3">React</p>
-
-                <div
-                    class="progress mb-5 reveal"
-                    style="height: 30px;"
-                    role="progressbar"
-                    aria-label="Danger example"
-                    aria-valuenow="100"
-                    aria-valuemin="0"
-                    aria-valuemax="100">
-                    <div
-                        class="progress-bar progress-bar-striped progress-bar-animated"
-                        style="width: 87%; background-color: rgb(0, 72, 255)">75%</div>
-                </div>
-                <p class="text-white text-center mt-3">Tailwind</p>
-
-                <div
-                    class="progress mb-5 reveal"
-                    style="height: 30px;"
-                    role="progressbar"
-                    aria-label="Danger example"
-                    aria-valuenow="100"
-                    aria-valuemin="0"
-                    aria-valuemax="100">
-                    <div
-                        class="progress-bar progress-bar-striped progress-bar-animated"
-                        style="width: 87%; background-color: rgb(0, 153, 255)">92%</div>
-                </div>
-                <p class="text-white text-center mt-3">Bootstrap</p>
-
-                <div
-                    class="progress mb-5 reveal"
-                    style="height: 30px;"
-                    role="progressbar"
-                    aria-label="Danger example"
-                    aria-valuenow="100"
-                    aria-valuemin="0"
-                    aria-valuemax="100">
-                    <div
-                        class="progress-bar progress-bar-striped progress-bar-animated"
-                        style="width: 87%; background-color: rgb(113, 0, 154)">87%</div>
-                </div>
-                <p class="text-white text-center mt-3">Nodejs, express</p>
-
-                <div
-                    class="progress mb-5 reveal"
-                    style="height: 30px;"
-                    role="progressbar"
-                    aria-label="Danger example"
-                    aria-valuenow="100"
-                    aria-valuemin="0"
-                    aria-valuemax="100">
-                    <div
-                        class="progress-bar text-bg-success progress-bar-striped progress-bar-animated"
-                        style="width: 82%">82%</div>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- accordion -->
-
-        <div id="cv" class="container w-75 py-5">
-            <div class="accordion" id="accordionFlushExample" data-bs-theme="dark">
-                <div class="accordion-item mb-5 reveal" style="box-shadow: 0 0 30px #48b0ff59;">
-                    <h2 class="accordion-header">
-                        <button
-                            class="accordion-button collapsed text-white"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseOne"
-                            aria-expanded="false"
-                            aria-controls="flush-collapseOne">
-                            <p>Experience</p>
-                        </button>
-                    </h2>
-                    <div
-                        id="flush-collapseOne"
-                        class="accordion-collapse collapse"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            <div class="accordion-content">
-                                <div class="entry">
-                                    <strong>Fullstack Developer Internship —
-                                        <a href="Elio Hamouche internship greydeck.pdf" target="_blank">Greydeck Internship PDF</a>
-                                    </strong>
-                                    <p>July 2025 - September 2025</p>
-                                    <p>Worked on responsive pages, APIs, improved UI components.</p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item mb-5 reveal" style="box-shadow: 0 0 30px #48b0ff59;">
-                    <h2 class="accordion-header">
-                        <button
-                            class="accordion-button collapsed text-white"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseTwo"
-                            aria-expanded="false"
-                            aria-controls="flush-collapseTwo">
-                            <p>Education</p>
-                        </button>
-                    </h2>
-                    <div
-                        id="flush-collapseTwo"
-                        class="accordion-collapse collapse"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            <div class="accordion-content">
-                                <div class="entry">
-                                    <strong>BTS SIO —
-                                        <a target="_blank" href="https://ecoleiris.fr">Ecole IRIS</a>
-                                    </strong>
-                                    <p>2026</p>
-                                    <p>Main subjects: programming, databases, web development, software engineering.</p>
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item mb-5 reveal" style="box-shadow: 0 0 30px #48b0ff59;">
-                    <h2 class="accordion-header">
-                        <button
-                            class="accordion-button collapsed text-white"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseThree"
-                            aria-expanded="false"
-                            aria-controls="flush-collapseThree">
-                            <p>Projects</p>
-                        </button>
-                    </h2>
-                    <div
-                        id="flush-collapseThree"
-                        class="accordion-collapse collapse"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            <div class="accordion-content">
-                                <div class="entry">
-                                    <strong>My Github —
-                                        <a target="_blank" href="https://github.com/ElioH6">GitHub</a>
-                                    </strong>
-                                    <p>GitHub page with projects.</p>
-                                </div>
-
-                                <div class="entry">
-                                    <strong>Chat App —
-                                        <a target="_blank" href="https://github.com/ElioH6/chat-app">GitHub repo</a>
-                                    </strong>
-                                    <p>Full stack project using React, Node.js and MongoDB.</p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item mb-5 reveal" style="box-shadow: 0 0 30px #48b0ff59;">
-                    <h2 class="accordion-header">
-                        <button
-                            class="accordion-button collapsed text-white"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseFour"
-                            aria-expanded="false"
-                            aria-controls="flush-collapseFour">
-                            <p>Hobbies</p>
-                        </button>
-                    </h2>
-                    <div
-                        id="flush-collapseFour"
-                        class="accordion-collapse collapse"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            <div class="accordion-content">
-                                <div class="entry">
-                                    <strong>Technology Watch</strong>
-                                    <p>Following new web technologies and building mini-projects to practice.</p>
-                                </div>
-
-                                <div class="entry">
-                                    <strong>Tech, Design, Fitness</strong>
-                                    <p>Interested in interface design, creative coding and personal fitness.</p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Contact -->
-
-        <div id="contact" class="bg-dark py-5">
-
-            <div class="contact-section text-white container my-5 reveal" id="contact">
-                <h2 class="section-title text-center mb-5 fs-1 fw-semibold" id="skill-title">Contact</h2>
-
-                <div class="contact-card">
-                    <h3 class="fs-5 pb-3 fw-semibold">Get in touch</h3>
-                    <p>Email:
-                        <a href="mailto:eliohamouche6@gmail.com">Gmail</a>
-                    </p>
-                    <p>GitHub:
-                        <a target="_blank" href="https://github.com/ElioH6">Github</a>
-                    </p>
-                    <p>LinkedIn:
-                        <a target="_blank" href="https://www.linkedin.com">linkedin</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Footer -->
-
-        <footer class="site-footer text-white text-center py-5">
-            <p>© 2026 Elio Hamouche - My CV Website</p>
         </footer>
 
-        <script src="script.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="script.js"></script>
     </body>
 </html>
